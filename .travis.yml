@@ -480,7 +480,7 @@ install:
   - if [ -z "$TEST_CMAKE" ]; then ./bootstrap.sh; ./b2 headers; fi
 
 script:
-  - echo "Test.."
+  - echo "Test..."
 notifications:
   email:
     on_success: always
