@@ -479,7 +479,8 @@ install:
   - python tools/boostdep/depinst/depinst.py --git_args "--jobs $GIT_FETCH_JOBS" atomic
   - if [ -z "$TEST_CMAKE" ]; then ./bootstrap.sh; ./b2 headers; fi
 
-script: true
+script:
+  - echo Hello
 notifications:
   email:
     on_success: always
