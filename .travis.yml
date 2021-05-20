@@ -162,7 +162,6 @@ matrix:
       env: TOOLSET=gcc COMPILER=g++-10 CXXSTD64=03,11,14,17,20,03-gnu,11-gnu,14-gnu,17-gnu,20-gnu CXXSTD32=03,11 INSTRUCTION_SET=core2
       addons:
         apt:
-          - update
           packages:
             - g++-10
             - g++-10-multilib
@@ -176,7 +175,6 @@ matrix:
       env: TOOLSET=gcc COMPILER=g++-11 CXXSTD64=03,11,14,17,20,03-gnu,11-gnu,14-gnu,17-gnu,20-gnu CXXSTD32=03,11 INSTRUCTION_SET=core2
       addons:
         apt:
-          - update
           packages:
             - g++-11
             - g++-11-multilib
@@ -190,7 +188,6 @@ matrix:
       env: UBSAN=1 TOOLSET=gcc COMPILER=g++-11 CXXSTD64=03,11,14,17,20 INSTRUCTION_SET=core2 UBSAN_OPTIONS=print_stacktrace=1 BUILD_VARIANT=debug LINKFLAGS=-fuse-ld=gold
       addons:
         apt:
-          - update
           packages:
             - g++-11
           sources:
@@ -384,7 +381,6 @@ matrix:
       env: TOOLSET=clang COMPILER=clang++-11 CXXSTD64=03,11,14,17,20 CXXSTD32=03,11 INSTRUCTION_SET=core2
       addons:
         apt:
-          - update
           packages:
             - clang-11
             - g++-9-multilib
@@ -400,7 +396,6 @@ matrix:
       env: TOOLSET=clang COMPILER=clang++-12 CXXSTD64=03,11,14,17,20 CXXSTD32=03,11 INSTRUCTION_SET=core2
       addons:
         apt:
-          - update
           packages:
             - clang-12
             - g++-9-multilib
@@ -417,7 +412,6 @@ matrix:
       env: UBSAN=1 TOOLSET=clang COMPILER=clang++-12 CXXSTD64=03,11,14,17,20 INSTRUCTION_SET=core2 UBSAN_OPTIONS=print_stacktrace=1 BUILD_VARIANT=debug
       addons:
         apt:
-          - update
           packages:
             - clang-12
             - g++-9-multilib
